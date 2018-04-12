@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+$primary-color: #42b983;
+
+* {
+  box-sizing: border-box;
+  //border: 1px solid #f40;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  font-smoothing: antialiased;
+  min-height: 100%;
+  color: #34495e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  before: 0.67em;
+  after: 0.67em;
+  start: 0px;
+  end: 0px;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  before: 0.83em;
+  after: 0.83em;
+  start: 0px;
+  end: 0px;
+}
+
+h3 {
+  display: block;
+  font-size: 1.3em;
+  before: 0.63em;
+  after: 0.63em;
+  start: 0px;
+  end: 0px;
+}
+
+em {
+  color: #7f8c8d;
+}
+p {
+  word-spacing: 0.05em;
+}
+
+strong {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+code {
+  color: #e96900;
+  padding: 3px 5px;
+  margin: 0 2px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+figure {
+  text-align: center;
+  padding: .5em;
+  margin: .8em 0;
+  border: 1px solid #ddd;
+}
+
+figcaption {
+  margin-top: 1em;
+  margin-bottom: .5em;
+  text-align: center;
+  &:before {
+    content: "Figuire: ";
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.topic {
+  padding: .3em;
+  a {
+  color: #42b983;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: auto;
+}
+}
+
+.article {
+  max-width: 60em;
+}
+.topic-inner {
+  padding-left: 3em;
+}
+.topic h2 {
+  margin-top: 45px;
+  padding-bottom: 1em;
+  color: #2c3e50;
+  font-size: 1.5em;
+  font-weight: 500;
+  border-bottom: 1px solid #ddd;
+}
+.tip {
+  padding: 12px 24px 12px 30px;
+  margin: 2em 0;
+  border-left: 4px solid #f66;
+  background-color: #f8f8f8;
+  position: relative;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.tip:before {
+  position: absolute;
+  top: 14px;
+  left: -12px;
+  background-color: #f66;
+  color: #fff;
+  content: "!";
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+  font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+}
+
+.experiment {
+  list-style-type: circle;
+  li {
+    margin-top: 2em;
+  }
+}
+
+.exercise {
+  ul {
+    list-style-type: decimal;
+  }
+  .question {
+
+  }
+  .answer {
+    color: #ddd;
+    em {
+      color: #ddd;
+    }
+    &:before {
+      content: "答案：";
+    }
+  }
+}

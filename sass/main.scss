@@ -1,0 +1,82 @@
+@import 'extra';
+
+header {
+  box-shadow: 0 0 1px rgba(0,0,0,0.25);
+  position: fixed;
+  z-index: 1000;
+  background-color: #fff;
+  top: 0;
+  width: 100%;
+  padding: .5em 60px;
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.header-gap {
+  padding-top: 33px;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+.catelog-active {
+  color: $primary-color !important;
+  font-weight: 600 !important;
+}
+
+.sidebar-link, .section-link {
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 2px solid $primary-color;
+  }
+}
+
+.sidebar-link {
+  color: #7f8c8d;
+}
+
+.section-link {
+  color: #34495e;
+}
+
+.menu, .sub-menu {
+  list-style: none;
+}
+
+.menu {
+  padding-left: 0;
+}
+.sub-menu {
+  padding-left: 1em;
+}
+
+.main {
+  position: relative;
+  padding: 0 60px 30px;
+  overflow-x: hidden;
+  min-height: 100%;
+
+  .sidebar {
+    position: fixed;
+    top: 78px;
+    bottom: 0;
+    width: 260px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .content {
+    margin-top: 78px;
+  }
+  .with-sidebar {
+    margin-left: 280px;
+  }
+}
